@@ -1,0 +1,19 @@
+<%= form_for @contact, url: contact_index_path, remote: true do |f| %>
+  <div class="form-group row justify-content-center">
+    <div class="col-lg-6">
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <%= f.label :name %>
+      <%= f.text_field  :name, required: true, class: 'form-control', placeholder: 'Your Name' %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email, required: true, class: 'form-control', placeholder: 'Your Email Address' %>
+
+      <%= f.label :message %>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true,
+        class: 'form-control', placeholder: 'Your message for Red. Make it nice or he will tell you Mom!' %>
+
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

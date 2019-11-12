@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+
+  </head>
+
+  <body>
+    <div class="container-fluid col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+      <%= render 'layouts/header' %>
+    </div>
+
+    <main class="body-content">
+      <div class="container-fluid col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+        <%= yield %>
+      </div>
+    </main>
+
+    <%= render 'layouts/footer' %>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<h3 class="text-center" style="padding-top:15px;">Find me here</h3>
+
+<div id="socials" class="row text-center">
+  <div class="col d-flex justify-content-center">
+
+    <%= link_to image_tag('linkedin.png', alt: 'LinkedIn', class: 'img-fluid'), 'https://www.linkedin.com/in/red-hendery-a6672799/', target: 'blank' %>
+
+    <% if current_page?(about_path) %>
+      <%= link_to image_tag('mail.png', alt: 'Email', class: 'img-fluid'), contact_index_path %>
+    <% end %>
+
+    <%= link_to image_tag('github.png', alt: 'Github', class: 'img-fluid'), 'https://github.com/redhendery/', target: 'blank' %>
+  </div>
+</div>
