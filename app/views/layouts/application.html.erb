@@ -19,6 +19,9 @@
 
     <main class="body-content">
       <div class="container-fluid col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+        <% flash.each do |message_type, message| %>
+          <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+        <% end %>
         <%= yield %>
       </div>
     </main>
