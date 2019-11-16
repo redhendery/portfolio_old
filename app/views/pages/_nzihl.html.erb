@@ -1,0 +1,36 @@
+<a data-toggle="modal" data-target="#nzihl" class="nav-link">
+  <%= image_tag('nzihl_teams.png', alt: 'Marin Cricket Club', class: 'img-fluid') %>
+  <p class="font-weight-bold">
+    New Zealand Ice Hockey League
+  </p>
+</a>
+
+<div class="modal fade" id="nzihl" tabindex="-1" role="dialog" aria-labelledby="nzihlTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="nzihlTitle">New Zealand Ice Hockey League Stats App</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag('nzihl.png', alt: 'NZIHL', id: 'myImg', class: 'img-fluid') %>
+        <p class="text-justify">
+          I used to be very involved with the New Zealand Ice Hockey League. I would film,
+          commentate and a bunch of other things, but there was no easy plave to view stats, standings
+          and game results. So I made an app that did those things and I had a good time doing it.
+        </p>
+        <p class="text-justify">
+          Built with Rails, Bootstrap 3, PostgresQL, Heroku, Data Tables.
+        </p>
+        <p class="text-justify">
+          Take a look! <%= link_to 'NZIHL Stats App', 'https://nzihl.herokuapp.com/', target: 'blank' %>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

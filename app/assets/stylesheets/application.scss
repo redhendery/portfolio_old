@@ -124,6 +124,13 @@ img {
   }
 }
 
+#portfolio-image {
+  img {
+    max-width: 90%;
+    padding-bottom: 30px;
+  }
+}
+
 /* Footer Content Styling */
 .footer {
   position: absolute;
