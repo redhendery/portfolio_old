@@ -1,0 +1,36 @@
+<a data-toggle="modal" data-target="#this_page" class="nav-link">
+  <%= image_tag('nzihl_teams.png', alt: 'Marin Cricket Club', class: 'img-fluid') %>
+  <p class="font-weight-bold text-center">
+    Red Hendery Portfolio
+  </p>
+</a>
+
+<div class="modal fade" id="this_page" tabindex="-1" role="dialog" aria-labelledby="this_pageTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="this_pageTitle">Red Hendery Portfolio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag('nzihl.png', alt: 'NZIHL', id: 'myImg', class: 'img-fluid') %>
+        <p>
+          I made this new portfolio to replace my old outdated one and a little bit because I was bored.
+          I wanted to give Rails 6 a try and figure out how Webpack within Rails and how to best utilise it.
+        </p>
+        <p>
+          Built with Rails, Webpack, Bootstrap 4, Heroku, and a bunch of JavaScript to make easter eggs.
+        </p>
+        <p>
+          You are already looking at it! <%= link_to 'NZIHL Stats App', 'https://this_page.herokuapp.com/', target: 'blank' %>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <%= render 'layouts/socials' %>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
